@@ -1,4 +1,4 @@
 # desenvolve-introducao-web
-Projeto Dsenvolve - Itabira
-Introdução á Programação Web
-Matrícula : PDITA763
+- Projeto Dsenvolve - Itabira
+- Introdução á Programação Web
+- Matrícula : PDITA763
