@@ -1,63 +1,58 @@
-<!-- Prática. Você deverá implementar um formulário de pesquisa de satisfação. Esse
-
-formulário é dividido em duas partes.
-
-a. Dados pessoais, onde o cliente deverá fornecer seu nome, e-mail, e telefone para contato.
-
-b. Pesquisa, onde o cliente deverá responder a três perguntas. Duas delas utilizarão radio buttons como campo de resposta, e uma utilizará menu de dropdown. Antes do botão de envio, inclua um checkbox indicando se o cliente autoriza compartilhar sua resposta com terceiros.
-
- -->
 <!DOCTYPE html>
 <html>
-    <head>
-        <title>Pesquisa de satisfação</title>
-    </head>
-    <body>
-        <h1>Pesquisa de satisfação ao cliente</h1>
-
-       
-        <form action="destino.html" metodo="POST">
-         <!-- Referenciei essa página que não existe, por não saber tratar os dados recebidos, e para estar mais 'completo'. -->
-            <h2>Dados do cliente</h2>
+<head>
+    <title>Pesquisa de Satisfação</title>
+</head>
+<body>
+    <h1>Pesquisa de Satisfação ao Cliente</h1>
+    
+    <form action="destino.html" method="POST">
+        <!-- Referenciei essa página que não existe, por não saber tratar os dados recebidos, e para estar mais 'completo'. -->
+        
+        <section>
+            <h2>Dados do Cliente</h2>
             <p>
                 <label for="nome">Nome do cliente:</label>
-                <input type="text" placeholder="Digite seu nome" id="nome"/>
+                <input type="text" placeholder="Digite seu nome" id="nome" />
             </p>
             <p>
                 <label for="email">E-mail:</label>
-                <input type="email" placeholder="Digite seu e-mail" id=" email"/> 
+                <input type="email" placeholder="Digite seu e-mail" id="email" />
             </p>
             <p>
                 <label for="telefone">Telefone para contato:</label>
-                <input type="number" placeholder="Digite seu telefone para contato" id="telefone"/>
+                <input type="number" placeholder="Digite seu telefone para contato" id="telefone" />
             </p>
-            <h2> Pesquisa de satisfação</h2>
+        </section>
+        
+        <section>
+            <h2>Pesquisa de Satisfação</h2>
             <p>
-               Como você avalia a qualidade do nosso atendimento?
-               <input type="radio" id="excelente" name="qualidade"/>
-               <label for="excelente">Excelente</label>
-               <input type="radio" id="bom" name="qualidade"/>
-               <label for="bom">Bom</label>
-               <input type="radio" id="regular" name="qualidade"/>
-               <label for="regular">Regular</label>
-               <input type="radio" id="ruim" name="qualidade"/>
-               <label for="ruim">Ruim</label>
-               <input type="radio" id="péssimo" name="qualidade"/>
-               <label for="péssimo">Péssimo</label>
+                Como você avalia a qualidade do nosso atendimento?
+                <input type="radio" id="excelente" name="qualidade" />
+                <label for="excelente">Excelente</label>
+                <input type="radio" id="bom" name="qualidade" />
+                <label for="bom">Bom</label>
+                <input type="radio" id="regular" name="qualidade" />
+                <label for="regular">Regular</label>
+                <input type="radio" id="ruim" name="qualidade" />
+                <label for="ruim">Ruim</label>
+                <input type="radio" id="pessimo" name="qualidade" />
+                <label for="pessimo">Péssimo</label>
             </p>
             <p>
                 Você recomendaria nossos serviços para outras pessoas?
-                <input type="radio" id="sim" name="recomendação"/>
+                <input type="radio" id="sim" name="recomendacao" />
                 <label for="sim">Sim, com certeza</label>
-                <input type="radio" id="talvez" name="recomendação"/>
+                <input type="radio" id="talvez" name="recomendacao" />
                 <label for="talvez">Talvez</label>
-                <input type="radio" id="Não" name="recomendação"/>
-                <label for="Não">Não</label>
+                <input type="radio" id="nao" name="recomendacao" />
+                <label for="nao">Não</label>
             </p>
             <p>
                 Qual foi o principal motivo da sua compra?
                 <select>
-                    <option>Selecione uma opçaõ</option>
+                    <option>Selecione uma opção</option>
                     <option>Necessidade pessoal</option>
                     <option>Indicação de amigos/familiares</option>
                     <option>Promoção/desconto</option>
@@ -66,13 +61,14 @@ b. Pesquisa, onde o cliente deverá responder a três perguntas. Duas delas util
                 </select>
             </p>
             <p>
-                <input type="checkbox" id="permissão"/>
-                <label for="permissão">Autorizo o compartilhamento dos dados com tereciros.</label>
+                <input type="checkbox" id="permissao" />
+                <label for="permissao">Autorizo o compartilhamento dos dados com terceiros.</label>
             </p>
-            <p>
-                <input type="submit" value="Enviar"/>
-           </p>
-
-        </form>
-    </body>
+        </section>
+        
+        <p>
+            <input type="submit" value="Enviar" />
+        </p>
+    </form>
+</body>
 </html>
