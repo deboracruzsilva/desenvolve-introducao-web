@@ -1,0 +1,18 @@
+
+
+a{ color:red;}
+a:hover{color:lime;}
+p{
+    font-family:'Arial';
+}
+h2 + p{
+    font-weight: bold;
+}
+p.destaque{
+    font-family:'Arial';
+    font-weight: bold;
+
+}
+strong.destaque{
+    color:red;
+}
