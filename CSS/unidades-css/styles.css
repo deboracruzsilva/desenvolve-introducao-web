@@ -1,0 +1,41 @@
+/* Exercícios - CSS Unidades de medida
+
+1. Analise o código CSS abaixo e calcule em pixels o tamanho da fonte dos elementos:
+
+=> h1 
+=> .principal 
+=> .secundário 
+*/
+
+html { font-size: 20px; } 
+html h1 { font-size: 2rem; } /* 2× 20 px = 40px */
+h1 > .principal { font-size: 1.4em; } /* 1.4 × 40px = 56px */
+html .secundario { font-size: 1.4rem; } /* 1.4 × 20 = 28 px */
+
+
+
+/*
+2. Dada a cor definida no formato RGBrgb(219, 78, 68) , calcule duas possíveis variações, uma 15% mais clara, outra 15% mais escura. 
+Coloque as cores lado-a-lado e compare os resultados.
+*/
+.cor {
+    background: rgb(219 ,78, 68);
+}
+
+/* Para a cor mais clara, é necessário adicionar 15% de cada cor do rgb:
+=> (0.15*219)+219 = 251.85 ~ 252
+=> (0.15*78)+78 = 89.7 ~ 90
+=> (0.15*68)+68 = 78.2 ~ 78
+*/
+.cor-clara {
+    background: rgb(252, 90, 78);
+}
+
+/* Para a cor mais escura, é necessário sutrair 15% de cada cor do rgb:
+=> 219-(0.15*219) = 186.15 ~ 186
+=> 78-(0.15*78) = 66.3 ~ 66
+=> 68-(0.15*68) = 57.8 ~ 58
+*/
+.cor-escura {
+    background: rgb(186, 66, 58);
+}
