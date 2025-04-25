@@ -1,0 +1,111 @@
+/*O foco dessa atividade será reposicionar os elementos da nossa página!
+
+1. Defina o elemento .page-wrapper como referência para posicionamento.
+
+2. Faça com que o painel .explanation ocupe 60% da largura disponível, mas crie um
+
+espaçamento a direita de 35% utilizando margin .
+
+- Adicione uma borda à direita do painel de 1px, com a cor #1f295c
+
+- Adicione um espaçamento interno de 2% no lado direito do painel.
+
+3. Agora mova o menu de designs para a direita da página, ocupando o espaço em branco
+
+deixado pelo elemento .explanation .
+
+- Faça-o iniciar na parte superior da página, após a parte de introdução (por exemplo,
+
+aplicando top: 560px ).
+
+- Faça-o iniciar após o elemento .explanation (por exemplo, aplicando left: 62% ).
+
+- Adicione um espaçamento interno horizontal de 2% no menu para centralizá-lo.
+
+*/
+
+.page-wrapper{
+    background: rgb(229, 192, 244);
+    color: rgb(33, 33, 33);
+    font-size: 20px;
+    font-family:Trebuchet,sans-serif;
+    width:auto;
+    max-width:1280px;
+    position: relative;
+}
+.explanation{
+    width:60%;
+    margin-right: 35%;
+    border-right: solid 1px #1f295c;
+    padding-right: 2%;
+   
+}
+#design-selection{
+    position:absolute;
+    top:560px;
+    left:62% ;
+    padding-left: 1%;
+    padding-right:1%;
+
+}
+p{
+    text-indent: 1em;
+}
+h1,h1,h3{
+    text-align:center;
+}
+h1{font-size: 1.8 rem;}
+h2{font-size: 1.4 rem;}
+h3{font-size:1.2 rem;}
+
+.sumary{
+    text-align:center;
+
+}
+.main p{
+    line-height: 1.5;
+}
+abbr{
+    font-variant: small-caps;
+}
+
+#zen-intro{
+    height: 550px;
+}
+#design-archives{
+    display:none;
+}
+#zen-intro header{
+    color:rgb(229, 192, 244) ;
+    background-color:rgb(33, 33, 33);
+}
+#zen-intro header h1, #zen-intro header h2{
+    display: inline-block;
+}
+#zen-intro header h1{
+    margin-right: 1em;
+    margin-left: 1em;
+}
+aside ul{
+    list-style-type:none;
+}
+aside ul li{
+    margin:1em;
+    text-align:center;
+}
+.main footer{
+    margin:4%;
+    
+}
+.main footer a{
+    border: solid 2px rgb(128, 0, 128);
+    padding:0.5em;
+    display: inline-block;
+}
+/*
+Paleta de cores
+Cor destaque => rgb(128, 0, 128);
+Cor secundária => rgb(0, 202, 87)
+Cor da fonte => rgb(33, 33, 33);
+Cor do Fundo => rgb(229, 192, 244). 
+}*/
