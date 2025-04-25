@@ -1,0 +1,148 @@
+/*
+Na atividade deste capítulo iremos aprimorar o layout de nossa página utilizando o flexbox.
+
+1. Aplique o flexbox no rodapé da seção principal, e posicione os links de forma que fiquem
+
+centralizados e com espaçamento entre eles.
+
+- Defina um mesmo tamanho para os links.
+
+- Não se esqueça de tratar o caso de quebra de linha.
+
+2. Configure um layout de flexbox para a seção de benefícios da seguinte forma:
+
+- O texto deve ficar à esquerda, e o título à direita.
+
+- O título deve ficar centralizado verticalmente.
+
+- O texto deve ocupar aproximadamente 70% da largura, e o título 30%.
+
+3. Configure um layout de flexbox para a seção de participação da seguinte forma:
+
+- Cada item deve ocupar 50% do espaço disponível.
+
+- O título deverá ficar centralizado verticalmente.
+
+4. Inclua uma linha no topo e embaixo das seções de benefícios e participação, utilizando a
+
+propriedade border-bottom e border-top respectivamente.
+
+- Remova a ocorrência de borda duplicada entre as duas seções
+*/
+.page-wrapper{
+    background: rgb(229, 192, 244);
+    color: rgb(33, 33, 33);
+    font-size: 20px;
+    font-family:Trebuchet,sans-serif;
+    width:auto;
+    max-width:1280px;
+    position: relative;
+}
+.explanation{
+    width:60%;
+    margin-right: 35%;
+    border-right: solid 1px #1f295c;
+    padding-right: 2%;
+   
+}
+#design-selection{
+    position:absolute;
+    top:500px;
+    left:62% ;
+    padding-left: 1%;
+    padding-right:1%;
+
+}
+p{
+    text-indent: 1em;
+}
+h1,h1,h3{
+    text-align:center;
+}
+h1{font-size: 1.8 rem;}
+h2{font-size: 1.4 rem;}
+h3{font-size:1.2 rem;}
+
+.sumary{
+    text-align:center;
+
+}
+.main p{
+    line-height: 1.5;
+}
+abbr{
+    font-variant: small-caps;
+}
+
+#zen-intro{
+    height: 550px;
+}
+#design-archives{
+    display:none;
+}
+#zen-intro header{
+    color:rgb(229, 192, 244) ;
+    background-color:rgb(33, 33, 33);
+}
+#zen-intro header h1, #zen-intro header h2{
+    display: inline-block;
+}
+#zen-intro header h1{
+    margin-right: 1em;
+    margin-left: 1em;
+}
+aside ul{
+    list-style-type:none;
+}
+aside ul li{
+    margin:1em;
+    text-align:center;
+}
+.supporting footer{
+    margin:4%;
+    display: flex;   
+    justify-content: space-around;
+    flex-wrap:wrap;
+    
+}
+.supporting footer a{
+    border: solid 2px rgb(128, 0, 128);
+    padding:0.5em;  
+}
+.benefits{
+    display:flex;
+    border-top: #1f295c 2px solid;
+    border-top:none;
+    border-bottom: #1f295c 2px solid;
+
+}
+.benefits h3{
+    order:2;
+    align-self: center;
+    flex-basis:30%;
+    
+}
+.benefits p{
+    order:1;
+    flex-basis:70%;
+}
+.participation{
+    display:flex;
+    border-top: #1f295c 2px solid;
+    border-bottom: #1f295c 2px solid;
+    flex-wrap: wrap;
+}
+.participation h3, .participation p{
+    flex-basis: 50%;
+ 
+}
+.participation h3{
+    align-self: center;   
+}
+/*
+Paleta de cores
+Cor destaque => rgb(128, 0, 128);
+Cor secundária => rgb(0, 202, 87)
+Cor da fonte => rgb(33, 33, 33);
+Cor do Fundo => rgb(229, 192, 244). 
+}*/
