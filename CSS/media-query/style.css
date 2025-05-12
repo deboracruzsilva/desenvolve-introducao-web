@@ -1,0 +1,222 @@
+
+
+/*
+Vamos deixar a nossa página do CSS Zen Garden responsiva a dispositivos móveis! Para isso iremos implementar as seguintes modificações.
+
+1. Crie uma media query para telas inferiores a 768 pixels; nós a utilizaremos como layout mobile.
+
+2. Realize as seguintes mudanças para p layout mobile
+
+Remova o reposicionamento do menu de design para que ele se encaixe no mesmo lugar de antes.
+
+Remova a borda lateral ao lado da div
+
+mude a orientação do Flexbox presente no elemento   para vertical, e organize os elementos de forma empilhada
+
+Remova a altura fixa presente no cabeçalho da página
+
+Remova também o espaçamento inicial dado a cada um dos parágrafos
+
+Vamos Deixar nossa página mais adequada a mídia de impressão também!
+
+1. Crie uma media query para meios impressos, mas sem qualquer tipo de restrição relacionada a tela
+
+2. Adicione as seguintes modificações a essa media query
+
+Altere o estilo da fonte para uma serifada, como times .
+
+Inverta as cores do banner para que o fundo fique claro (assim como o restante da página)
+*/
+@media screen and (max-width: 768px) {
+    #design-selection {
+        position:static;
+        width:100%;
+    }
+    .explanation{
+        border-right: none;
+        width:100%
+    }
+    #zen-intro{
+        height: auto;
+    }
+}
+@media print{
+    body{
+        font-family: 'Times New Roman', Times, serif;
+    }
+    #zen-intro header{
+        background-color: rgb(229, 192, 244);
+        color: rgb(33, 33, 33);
+    }
+}
+
+a{
+    color:rgb(128, 0, 128);
+    font-weight: bold;
+}
+
+a:visited{
+    font-weight: 400;
+    color: #1f295c;
+}
+a:hover{
+    color:rgb(242, 0, 242, 0.842);
+}
+.main p:first-of-type:first-letter{
+    font-size:3em;
+    font-family:fantasy;
+    float:left;
+}
+.design-selection li{
+    border-top:rgb(128,0,128) solid 1px;
+    padding-top: 3px;
+}
+.design-selection li:last-of-type{
+    border-bottom:rgb(128, 0, 128) solid 1px;
+    padding-bottom: 3px;
+
+}
+.page-wrapper{
+    background: rgb(229, 192, 244);
+    color: rgb(33, 33, 33);
+    font-size: 20px;
+    font-family:Trebuchet,sans-serif;
+    width:auto;
+    max-width:1280px;
+    position: relative;
+}
+
+#zen-intro header{
+    color:rgb(229, 192, 244) ;
+    background-color:rgb(33, 33, 33);
+}
+
+#zen-intro header h1, #zen-intro header h2{
+    display: inline-block;
+}
+
+#zen-intro header h1{
+    margin-right: 1em;
+    margin-left: 1em;
+}
+
+h1,h1,h3{ 
+    text-align:center;
+}
+
+h1{
+    font-size: 1.8 rem;
+}
+
+h2{
+    font-size: 1.4 rem;
+}
+
+h3{
+    font-size:1.2 rem;
+}
+
+abbr{
+    font-variant: small-caps;
+}
+
+p{
+    text-indent: 0;
+}
+
+#zen-intro{
+    height: 550px;
+    display:block;
+}
+
+.main p{
+    line-height: 1.5;
+}
+
+.sumary{
+    text-align:center;
+}
+
+.explanation{
+    width:60%;
+    margin-right: 35%;
+    border-right: solid 1px #1f295c;
+    padding-right: 2%;
+}
+
+.participation{
+    display:flex;
+    flex-direction: column;
+    border-top: #1f295c 2px solid;
+    border-bottom: #1f295c 2px solid;
+    flex-wrap: wrap;
+}
+
+.participation h3, .participation p{
+    flex-basis: 100%;
+ 
+}
+
+.participation h3{
+    align-self: center;   
+}
+
+.benefits{
+    display:flex;
+    flex-direction: column;
+    border-top: #1f295c 2px solid;
+    border-top:none;
+    border-bottom: #1f295c 2px solid;
+}
+
+.benefits h3{
+    order:2;
+    align-self: center;
+    flex-basis:100%;   
+}
+
+.benefits p{
+    order:1;
+    flex-basis:100%;
+}
+
+.supporting footer{
+    margin:4%;
+    display: flex;   
+    justify-content: space-around;
+    flex-wrap:wrap; 
+}
+
+.supporting footer a{
+    border: solid 2px rgb(128, 0, 128);
+    padding:0.5em;  
+}
+
+#design-selection{
+    position:absolute;
+    top:500px;
+    left:62% ;
+    padding-left: 1%;
+    padding-right:1%;
+}
+
+aside ul{
+    list-style-type:none;
+}
+
+aside ul li{
+    margin:1em;
+    text-align:center;
+}
+
+#design-archives{
+    display:none;
+}
+
+/*
+Paleta de cores
+Cor destaque => rgb(128, 0, 128);
+Cor secundária => rgb(0, 202, 87)
+Cor da fonte => rgb(33, 33, 33);
+Cor do Fundo => rgb(229, 192, 244). 
+}*/
